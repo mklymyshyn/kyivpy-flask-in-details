@@ -1,0 +1,1 @@
+(function(){$("ol").append("<li>Module #1 initialized</li>")})();(function(){$("ol").append("<li>Module #2 initialized</li>")})();

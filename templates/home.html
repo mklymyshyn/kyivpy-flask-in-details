@@ -1,0 +1,17 @@
+
+<html>
+<head><title>Home</title></head>
+<body>
+<p>List of initialized modules:</p>
+<ol>
+
+</ol>
+
+{% assets "core" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{% endassets %}
+{% assets "app" %}
+    <script type="text/javascript" src="{{ ASSET_URL }}"></script>
+{% endassets %}
+</body>
+</html>

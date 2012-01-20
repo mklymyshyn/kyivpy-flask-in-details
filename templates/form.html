@@ -1,0 +1,14 @@
+{% with messages = get_flashed_messages() %}
+    {{ ", ".join(messages or []) }}
+{% endwith %}
+<hr />
+<form method="post" action="/form">
+    {{ form.csrf }}
+    <i>{{ "; ".join(form.username.errors) }}</i><br />
+    {{ form.username.label }} {{ form.username(size=20) }}
+    <hr />
+    <i>{{ "; ".join(form.email.errors) }}</i><br />
+    {{ form.email.label }} {{ form.email(size=20) }}
+    <hr />
+    <input type="submit" value="Go">
+</form>
